@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <style>  
+
+.login {
+    padding:50px;
+    background-image:url("https://tse2.mm.bing.net/th?id=OIP.880NrUEXDIq2yN_oePPgXAHaEK&pid=Api&P=0&h=180");
+    background-size:cover;
+    width:100vw;
+    color:white;
+    font-family:"Roboto";
+}
+.login1 {
+    margin-top:10px;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+.login-button {
+    border-radius:10px;
+    background-color: transparent;
+    color:white;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-color:white;
+    padding-left:10px;
+    padding-right:10px;
+}
+.loginUsername{
+    padding-right:10px;
+}
+    </style>
+</head>
+<body>
+<div class="login">
+<h2>Login</h2>
+
+<form action="login1" method="post">
+    <div>
+        <label for="loginUsername"  class = "loginUsername">Username:</label>
+        <input type="text"  id="loginUsername" placeholder="UserName" name="loginUsername" required>
+    </div>
+    <div>
+        <label for="loginPassword" class = "loginUsername" >Password:</label>
+        <input type="password" id="loginPassword" placeholder="*****"     name="loginPassword" required>
+    </div>
+    <div>
+        <button type="submit" class = "login-button">Login</button>
+    </div>
+</form>
+
+<h2>Register</h2>
+
+<form action="/register" method="post">
+    <div>
+        <label for="registerUsername" class = "loginUsername">Username:</label>
+        <input type="text" id="registerUsername" placeholder="UserName"   name="registerUsername" required>
+    </div>
+    <div>
+        <label for="emailid" class="loginUsername">Email</label>
+        <input type="email"  id="emailid" placeholder="abc@gmail" name="emailid" required>
+    </div>
+    <div>
+        <label for="DOB" class = "loginUsername">Date of Brith</label>
+        <input type="date" id="DOB" required>
+    </div>
+    <div>
+        <label class = "loginUsername">Gender :</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">Female
+    </div>
+    <div>
+        <label class = "loginUsername" for="registerPassword">Password:</label>
+        <input type="password" id="registerPassword" placeholder="*****"     name="registerPassword" required>
+    </div>
+    
+    <div>
+        <label class = "loginUsername" for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <div>
+        <button type="submit" class = "login-button">Register</button>
+    </div>
+</form>
+</div>
+</body>
+</html>
